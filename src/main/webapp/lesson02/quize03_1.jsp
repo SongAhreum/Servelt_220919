@@ -14,9 +14,9 @@
 </head>
 <body>
 <%
-	int weight  =Integer.parseInt( request.getParameter("weight"));
-	int height = Integer.parseInt( request.getParameter("height"));
-	double BMI = (double)weight / (height*height)*10000;
+	double weight = Double.parseDouble(request.getParameter("weight"));
+	double height = Double.parseDouble(request.getParameter("height"));
+	double BMI = weight / (height*height)*10000;
 	String result = null;
 	
 	if(BMI <= 20){
