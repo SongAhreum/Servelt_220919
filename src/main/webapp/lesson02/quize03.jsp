@@ -13,20 +13,17 @@
 </head>
 <body>
 	<div class="container">
-		<h2>체격조건</h2>
-		<div class="d-flex">
+	
+		<h2>체격 조건 입력</h2>
+		
 		<form action="/lesson02/quize03_1.jsp" method="get" >
-			<input type="text" name="height" class="form-control col-2">cm  
-			<input type="text" name="weight" class="form-control col-2">kg
-			<input type ="submit" class="btn btn-info" value="계산">
-		
+			<div class="d-flex align-items-end ">
+				<input type="text" name="height" class="form-control col-4 mr-3"placeholder="키를 입력하세요">cm  
+				<input type="text" name="weight" class="form-control col-4 mr-3 ml-3"placeholder="몸무게를 입력하세요">kg
+				<input type ="submit" class="btn btn-info ml-3" value="계산">
+			</div>	
 		</form>	
-		</div>
-		
-		
-		
 		
 	</div>
-
 </body>
 </html>

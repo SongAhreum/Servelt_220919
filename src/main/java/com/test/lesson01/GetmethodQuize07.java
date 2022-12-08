@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 public class GetmethodQuize07 extends HttpServlet{
 	@Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		response.setCharacterEncoding("UTF8");
+		response.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html");
 		
 		String adress = request.getParameter("adress");

@@ -13,7 +13,7 @@ public class GetmethodEx04 extends HttpServlet{
 	@Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		//한글깨짐방지
-		response.setCharacterEncoding("UTF8");
+		response.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html");
 		//request parameter꺼내기
 		String userId = request.getParameter("userId");
