@@ -35,7 +35,7 @@
 	<span class="display-3">당신은 </span><span class="text-info display-3"> <%=result%></span><span class="display-3">입니다.</span><br>
 	<p class="text-small">BMI 수치 : <%=BMI %> </p>
 </div>
-
+<!-- <div class="display-3">당신은 <span class="text-info"><%=BMI %></span>입니다 </div> -->
 
 </body>
 </html>
