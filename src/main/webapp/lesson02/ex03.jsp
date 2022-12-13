@@ -33,8 +33,7 @@
 		
 		<!--<intput type="submit" value="제출">  -->
 		<button type="submit" > 제출</button>
-		
-		
+				
 	</form>
 </body>
 </html>

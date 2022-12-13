@@ -40,8 +40,7 @@ List<String> goodsList = Arrays.asList(new String[]{
 			</tbody>
 			<%
 					}
-			%>
-			
+			%>	
 		</table>
 	</div>
 </body>

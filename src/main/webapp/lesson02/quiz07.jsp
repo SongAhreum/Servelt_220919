@@ -1,4 +1,3 @@
-<%@page import="java.util.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -13,21 +12,19 @@
 <title>배탈의 민족</title>
 </head>
 <body>
-
 	<div class="container">
-	
-		<form action="/lesson02/quiz07_1.jsp" method="post">
-		<h1>메뉴 검색</h1>	
-		
-		<div class="input-group">
-			<input class="form-control col-4 m-2" name="keyword">
-			<label class="mt-4"><input type="checkbox" name="uperFour" value="true" class="m-2"> 4점이하 제외</label><br><br>
-		</div>	
-		<botton type="submit" class ="btn btn-success m-3">검색</botton>
-		
-		
+		<h1>메뉴 검색</h1>
+		<form method="post" action="/lesson02/quiz07_1.jsp"> <!-- get도상관없 -->
+			<div class="input-group">
+				<input type="text" class="form-control col-3" name="keyword">
+				<label class="ml-2 mt-2">
+					<input type="checkbox" name="uperFour" value="true">
+					4점 이하 제외
+				</label>
+			</div>
+			<button type="submit" class="btn btn-success mt-3" >검색</button>
+			<!-- <input type="submit" class="btn btn-success mt-3" value="검색"> -->
 		</form>
 	</div>
-
 </body>
 </html>

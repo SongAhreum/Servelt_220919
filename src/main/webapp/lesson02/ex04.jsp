@@ -20,9 +20,12 @@
 %>
 		<table border=1>
 			<%
-			Iterator<String> it = scoreMap.keySet().iterator();
+			//Set<String> keys = scoreMap.keySet();
+			//Iterator<String> it = keys.iterator();
+			Iterator<String> it = scoreMap.keySet().iterator(); 
 			while(it.hasNext()){
-				String key = it.next();			
+				String key = it.next();
+				//스클립틀릿 사이에 html코드를 넣을수있다. 제어문쓸때 구간 잘 볼것 
 			%>
 			<tr>
 				<th>
