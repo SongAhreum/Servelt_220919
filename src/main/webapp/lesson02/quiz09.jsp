@@ -19,9 +19,9 @@
 		<%	
 		Calendar dDay = Calendar.getInstance();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일");
-		
+		dDay.add(Calendar.DATE, -1);
 		for(int i = 1; i<=10;i++){		
-			dDay.add(Calendar.DATE, +99);
+			dDay.add(Calendar.DATE, +100);
 		%>
 		<div class="display-4">
 			<b><%=100*i %></b><span>일</span><b> : </b><span class="text-danger"><%=sdf.format(dDay.getTime()) %></span>
