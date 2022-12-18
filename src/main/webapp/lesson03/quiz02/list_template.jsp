@@ -107,27 +107,30 @@
 %>
 	<div id="wrap" class="container">
 		
-		
-		<form action="/lesson03/quiz02/" method="post">
+		<!-- header -->
 		
 		<header class ="d-flex">
 			
-			<jsp:include page="headerSearch.jsp"/>
-		</header>
+			<jsp:include page="header.jsp"/>
+					
+		</header>		
 		
-		</form>
 		
+		<!-- 상단메뉴 -->
 		<nav class="d-flex">
+			<jsp:include page="menu.jsp"/>
 		</nav>
 		
-		
+		<!-- contents -->		
 		<section>
-			
+			<jsp:include page="musicList.jsp"/>			
 		</section>
 		
+		
+		<!-- footer -->
 		<hr>
-		<footer>
-		Copyright © marondal All Rights Reserved
+		<footer >
+			<jsp:include page="footer.jsp"/>		
 		</footer>
 		
 	</div>

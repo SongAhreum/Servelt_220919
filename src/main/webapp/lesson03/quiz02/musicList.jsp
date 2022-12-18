@@ -81,44 +81,44 @@
     musicList.add(musicInfo);
 %>
 <!-- 가수정보 -->
-			<div>
-			<div class="border border-success d-flex p-3">	
-				<div>
-					<img width="200" alt="가수이미지" src="<%=artistInfo.get("photo") %>">
-				</div>
+<div class="m-3">
+	<div class="border border-success d-flex p-3">	
+		<div>
+			<img width="200" alt="가수이미지" src="<%=artistInfo.get("photo") %>">
+		</div>
 				
-				<div class="ml-3">
-					<h3><%=artistInfo.get("name") %></h3>
-					<h5><%=artistInfo.get("agency") %></h5>
-					<h5><%=artistInfo.get("debute") %> 데뷔</h5>
-				</div>
-			</div>
-				
-			<!-- 곡 목록 -->
-			</div class="m-3">
-				<h4 class="font-weight-bord">곡 목록</h4>
-			<div>
-				<table class="table text-center">
-					<thead>
-						<tr>
-							<th><b>no</b></th>
-							<th><b>제목</b></th>
-							<th><b>앨범</b></th>
-						</tr>
-					</thead>
-					<tbody>
-						<%
-						for(Map <String,Object>musicInfos : musicList){
-						
-						%>
-						<tr>
-							<td><%= musicInfos.get("id")%></td>
-							<td><a href="/lesson03/quiz02/melong?id=<%= musicInfos.get("id")%>"><%= musicInfos.get("title") %></a></td>
-							<td><%= musicInfos.get("album") %></td>
-						</tr>
-						<%
-						}
-						%>
-					</tbody>
-				</table>
-			</div>
+		<div class="ml-3">
+			<h3><%=artistInfo.get("name") %></h3>
+			<h5><%=artistInfo.get("agency")%></h5>
+			<h5><%=artistInfo.get("debute")%>  데뷔</h5>
+		</div>
+	</div>
+
+</div >
+
+<!-- 곡 목록 -->
+<h4 class="font-weight-bord">곡 목록</h4>
+<div>
+	<table class="table text-center">
+		<thead>
+			<tr>
+				<th><b>no</b></th>
+				<th><b>제목</b></th>
+				<th><b>앨범</b></th>
+			</tr>
+		</thead>
+		<tbody>
+		<%
+		for(Map <String,Object>musicInfos : musicList){						
+		%>
+			<tr>
+				<td><%= musicInfos.get("id")%></td>
+				<td><a href="/lesson03/quiz02/detail_template.jsp?id=<%= musicInfos.get("id")%>"><%= musicInfos.get("title") %></a></td>
+				<td><%= musicInfos.get("album") %></td>
+			</tr>
+		<%
+		}
+		%>
+		</tbody>
+	</table>
+</div>
