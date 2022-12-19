@@ -87,22 +87,32 @@ String songId = request.getParameter("id");
 boolean isId = songId != null;
 String search = request.getParameter("search");// 노래제목이 존재하면 해당패이지
 boolean isSearch = search != null;
+	 
 
 
+//Map<String,Object> musicInfoSelected = new HashMap();
+Map<String,Object> musicInfoSelected = null;
 
-Map<String,Object> musicInfoSelected = new HashMap();
 for(Map<String,Object> musicInfos : musicList){	
 	if(isId){
 		if(songId.equals(String.valueOf(musicInfos.get("id")))){
 			musicInfoSelected = musicInfos;
+			break;
 		}
 	} else if (isSearch){
 		if(String.valueOf(musicInfos.get("title")).contains(search)){
 			musicInfoSelected = musicInfos;
+			break;
 		} 
 	}
 }
 
+%>
+
+<%
+
+
+	if(musicInfoSelected != null){
 %>
 <br>
 <div><h3>곡 정보</h3></div>
@@ -120,7 +130,7 @@ for(Map<String,Object> musicInfos : musicList){
 				<%=musicInfoSelected.get("singer") %>
 			</div>
 			<br>
-			<div class="d-flex">
+			<div class="d-flex music-info">
 				<div>
 					앨범 <br>
 					재생시간 <br>
@@ -147,4 +157,11 @@ for(Map<String,Object> musicInfos : musicList){
 <div>
 	가사 정보 없음
 </div>
-
+<%
+	} else {
+%>
+	<jsp:include page="notFoundPage.jsp"/>
+<%
+	} 
+%>
+	

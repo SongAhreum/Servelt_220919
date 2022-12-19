@@ -19,7 +19,7 @@
 		a:hover {text-decoration:none; color:green;}
 		footer{height:40px}
 		.logo{color:green; text-center; font-weight :bold; font-size :3em ;}
-			
+		.music-info {color:gray; font-size:14px}	
 	</style>
 <title>Melong</title>
 </head>

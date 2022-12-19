@@ -81,6 +81,8 @@
     musicList.add(musicInfo);
 %>
 <!-- 가수정보 -->
+
+<div class= "mt-3 ml-3"><h3> 가수정보</h3></div>
 <div class="m-3">
 	<div class="border border-success d-flex p-3">	
 		<div>
@@ -97,7 +99,7 @@
 </div >
 
 <!-- 곡 목록 -->
-<h4 class="font-weight-bord">곡 목록</h4>
+<h4 class="font-weight-bord ml-3">곡 목록</h4>
 <div>
 	<table class="table text-center">
 		<thead>
