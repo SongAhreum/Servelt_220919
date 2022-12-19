@@ -12,7 +12,16 @@
 	<div class="col-8">
 	<form action="/lesson03/quiz02/detail_template.jsp" method="post">	
 			<div class="input-group">
-				<input type="text" class="form-control" name="search" >
+			<%
+			String searchWord = request.getParameter("search");
+			if(searchWord != null){
+				
+			} else {
+				searchWord = " ";
+			}
+			
+			%>
+				<input type="text" class="form-control" name="search" value="<%= searchWord %>">
 				<div class="input-group-append">
 					<button type="submit" class="btn btn-info ">검색</button>
 				</div>
