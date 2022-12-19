@@ -3,9 +3,9 @@
 <br>
 <div><h3>곡 정보</h3></div>
 <div>
-	<div class="border border-success d-flex p-3">	
+	<div class="border border-success p-5">	
 		
-		<h1 class="text-center">검색 정보 없음</h1>		
+		<h1 style ="color:gray;">검색 정보 없음</h1>		
 		
 	</div>
 </div>

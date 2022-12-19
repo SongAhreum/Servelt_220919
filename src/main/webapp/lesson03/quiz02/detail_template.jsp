@@ -110,9 +110,7 @@
 		<!-- header -->
 		
 		<header class ="d-flex">
-			
 			<jsp:include page="header.jsp"/>
-					
 		</header>		
 		
 		
