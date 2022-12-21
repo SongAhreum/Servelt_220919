@@ -73,13 +73,13 @@ public class MysqlService {
 	//쿼리를날려서 결과값을 들고와 Resultset클래스에 들어있음
 	public ResultSet select (String query) throws SQLException { //셀렉트할때 셀렉트 쿼리문있ㅇㅓ야함 파라미터로 받음
 		//쿼리를 수행해서 결과로 resultset을 돌려주게됨
-		statement.executeQuery(query); //여기에서 에러는 쿼리문이 잘못되었을것이기 때문에 throw씀
+		res = statement.executeQuery(query); //여기에서 에러는 쿼리문이 잘못되었을것이기 때문에 throw씀
 		return res;
 	}
 	
 	//CUD : insert update delete
 	public void update(String query) throws SQLException {
-		statement.executeQuery(query);
+		statement.executeUpdate(query);
 	}
 	
 }
