@@ -24,12 +24,15 @@
 	ResultSet rs = ms.select(selectQuery);
 
 %>
-<div>
-	<table class = "table text-center">
+
+<div class="container">
+	<div class="display-4 text-center mt-3">즐겨찾기 목록</div>
+	<table class = "table text-center mt-4">
 		<thead>
 			<tr>
 				<th><b>사이트</b></th>
 				<th><b>사이트주소</b></th>
+				<th><b>삭제</b></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -39,7 +42,7 @@
 			<tr>
 				<td><%=rs.getString("name") %></td>
 				<td><a href="<%=rs.getString("url")%>"><%=rs.getString("url")%></a></td>
-				<td><a href="/lesson04/quiz02_delete?id=<%=rs.getString("id")%>">삭제하기</a></td>
+				<td><a href="/lesson04/quiz02_delete?id=<%=rs.getString("id")%>" class="btn btn-info ">삭제하기</a></td>
 			</tr>
 			<%
 			}

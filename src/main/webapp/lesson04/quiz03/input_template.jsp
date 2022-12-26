@@ -31,28 +31,10 @@
 		<!-- 상단로고,메뉴 -->
 		<jsp:include page="/lesson04/quiz03/header.jsp"/>
 		
-		<!-- contents input -->
-		<section>
-			<div class="d-flex">
-				
-				<div>물건올리기</div>
-				<select>
-        			<option>-아이디선택-</option>
-       			 	<option></option>
-        			        
-    			</select>
-    			<input >
-    			<input><botton></botton>
-			</div>
-			<div>
-				<textarea></textarea>
-			</div>
+		<!-- contents -->
+		<jsp:include page="/lesson04/quiz03/input_contents.jsp"/>
 			
-			<botton class="btn">이미지url</botton><input>
-		</section>
-		
-		<botton class="btn btn-light" type="submit">저장</botton>
-		
+		<!-- footer -->
 		<jsp:include page="/lesson04/quiz03/footer.jsp"/>
 	
 	</div>
