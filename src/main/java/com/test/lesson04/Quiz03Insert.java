@@ -21,13 +21,17 @@ public class Quiz03Insert extends HttpServlet{
 		String price = request.getParameter("price");
 		String description = request.getParameter("description");
 		String picture = request.getParameter("picture");
+		int sellerId = Integer.valueOf(request.getParameter("sellerId"));
 		
 		//db연동
 		MysqlService ms = MysqlService.getInstance();
 		ms.connect();
 		
 		//insert문
-		String insertQuery = "";
+		String insertQuery = "insert into `used_goods`"
+				+ "(`sellerId`, `title`, `price`, `description`, `picture`)"
+				+ "values"
+				+ "(" + sellerId + ", '" + title + "', " + price + ", '" + description + "', '" + picture + "')";
 		try {
 			ms.update(insertQuery);
 		} catch (SQLException e) {

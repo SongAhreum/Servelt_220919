@@ -19,7 +19,7 @@
 	<div class="display-3">물건올리기</div>
     <!-- 첫째줄 input -->
 	<div class="d-flex mt-5 mb-4">
-		<select class="form-control mr-5">
+		<select class="form-control mr-5" name="sellerId">
 			<option >-아이디선택-</option>
 		<%
 		while (rs.next()){
